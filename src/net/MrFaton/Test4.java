@@ -151,3 +151,11 @@ public class Test4 {
         }
     }
 }
+/*
+В файл "twitter4j.properties" устанавливаются "consumer key" и "consumer secret". Далее, когда вызывается
+RequestToken requestToken = twitter.getOAuthRequestToken();
+то для того, чтобы получить токены к нашему приложению, чтение параметров "consumer key" и "consumer secret" происходит
+из файла "twitter4j.properties". Чтобы не читать из файла можно:
+Twitter twitter = new TwitterFactory().getInstance();
+twitter.setOAuthConsumer("consumer_key", "consumer_secret");
+ */
