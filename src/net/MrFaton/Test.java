@@ -14,6 +14,7 @@ public class Test {
     private static String accessTokenSecret = "92zAGkJPbhmsvgRrUnABoIojHj2p15Wdvpmv88li8k7aI";
 
     public static void main(String[] args) throws InterruptedException {
+        System.out.println();
         Twitter twitter = new TwitterFactory().getInstance();
         twitter.setOAuthConsumer(consumerKey, consumerSecret);
         twitter.setOAuthAccessToken(new AccessToken(accessToken, accessTokenSecret));
