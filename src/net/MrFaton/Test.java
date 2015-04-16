@@ -18,8 +18,6 @@ public class Test {
         twitter.setOAuthConsumer(consumerKey, consumerSecret);
         twitter.setOAuthAccessToken(new AccessToken(accessToken, accessTokenSecret));
         
-        System.out.pintln();
-
         String text = "На улице уже солнце";
         try {
 //            StatusUpdate statusUpdate = new StatusUpdate(text);
