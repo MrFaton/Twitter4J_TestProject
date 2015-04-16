@@ -17,6 +17,8 @@ public class Test {
         Twitter twitter = new TwitterFactory().getInstance();
         twitter.setOAuthConsumer(consumerKey, consumerSecret);
         twitter.setOAuthAccessToken(new AccessToken(accessToken, accessTokenSecret));
+        
+        System.out.pintln();
 
         String text = "На улице уже солнце";
         try {
