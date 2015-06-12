@@ -1,4 +1,4 @@
-package net.MrFaton;
+package com.mr_faton;
 
 import twitter4j.*;
 import twitter4j.auth.AccessToken;

@@ -1,4 +1,4 @@
-package net.MrFaton;
+package com.mr_faton;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
