@@ -7,7 +7,6 @@ import twitter4j.auth.AccessToken;
  * Created by Mr_Faton on 26.03.2015.
  */
 public class Test {
-    private static String user = "Mr_Faton";
     private static String consumerKey = "rkTfI2x3xyinEhgf9EkyLHpXn";
     private static String consumerSecret = "wBvno67v6r7YZCLUbR2MK3DUI2rvtfc082IWPC5xE4rHgfHMpg";
     private static String accessToken = "277175513-KiUjchyOd2wgKBpwE8SN0ROVRGw2WX0AZt8WO1WF";
