@@ -24,7 +24,7 @@ public class Test6 {
         twitter.setOAuthAccessToken(new AccessToken(accessToken, accessTokenSecret));
         
         try {
-            Paging pages = new Paging(1, 200);//первая пачка из 5 штук
+            Paging pages = new Paging(1, 5);//первая пачка из 5 штук
             System.out.println(pages);
 //            Paging pages = new Paging(2, 5);//вторая пачка из 5 штук
 //            Paging pages = new Paging(1, 10);//предыдущие 2 строки можно было заменить так
