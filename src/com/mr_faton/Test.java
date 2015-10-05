@@ -23,6 +23,7 @@ public class Test {
 //            twitter.updateStatus(statusUpdate);
 
             Status status = twitter.updateStatus(text);
+
             System.out.println("статус обновлён: " + status.getText());
 
             Thread.currentThread().sleep(10000);

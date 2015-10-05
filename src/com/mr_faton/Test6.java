@@ -24,11 +24,16 @@ public class Test6 {
         twitter.setOAuthAccessToken(new AccessToken(accessToken, accessTokenSecret));
         
         try {
+            ResponseList<Status> homeTimeline = twitter.getUserTimeline(new Paging(1, 1));
+            Status lastStatus = homeTimeline.get(0);
+            String text = lastStatus.getText();
+            System.out.println(text);
+
             Paging pages = new Paging(1, 5);//первая пачка из 5 штук
             System.out.println(pages);
 //            Paging pages = new Paging(2, 5);//вторая пачка из 5 штук
 //            Paging pages = new Paging(1, 10);//предыдущие 2 строки можно было заменить так
-            ResponseList<Status> timeLine = twitter.getUserTimeline("Wild_Happiness", pages);
+            ResponseList<Status> timeLine = twitter.getUserTimeline("katherine_27m", pages);
             for (Status status : timeLine) {
                 System.out.println("name = " + status.getUser().getName());
                 System.out.println("lang = " + status.getLang());
